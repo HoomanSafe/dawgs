@@ -1,0 +1,59 @@
+.Hero01 {
+  padding: 5rem 1rem 2rem;
+
+  background-image: url(../img/bg/bg-01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Hero01-box {
+  width: "100%";
+
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 5rem));
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+.Hero01-box > div:nth-child(1) {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+.Hero01-box img {
+  width: 100%;
+  margin-bottom: -2rem;
+}
+
+/*-- responsive --*/
+@media screen and (max-width: 1300px) {
+  .Hero01-box {
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Hero01 {
+    padding: 1rem 1rem 0;
+  }
+  .Hero01-box {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+  }
+  .Hero01-box img {
+    width: 50%;
+    margin-top: -25%;
+    margin-bottom: 0;
+    align-self: self-end;
+  }
+}

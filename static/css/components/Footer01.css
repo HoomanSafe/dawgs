@@ -1,0 +1,60 @@
+.Footer01 {
+  width: 100%;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Footer01-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.Footer01-logo img {
+  height: 3rem;
+}
+
+.Footer01-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*-- responsive --*/
+
+@media screen and (max-width: 1000px) {
+  .Footer01 {
+    width: 100%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .Footer01-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+  }
+
+  .Footer01-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,47 @@
+.Navbar01 {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  width: 100%;
+  padding: 1rem;
+
+  background-color: var(--clr-1);
+  border-bottom: solid 1px var(--clr-p);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Navbar01-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.Navbar01-logo img {
+  width: 3rem;
+}
+
+.Navbar01-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*-- responsive --*/
+
+@media screen and (max-width: 1000px) {
+  .Navbar01-links > li {
+    display: none;
+  }
+  .Navbar01-links > li:last-child {
+    display: block;
+  }
+}

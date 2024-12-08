@@ -1,0 +1,71 @@
+.Token01 {
+  background-image: url(../img/bg/bg-01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Token01-box {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 2rem));
+  gap: 4rem;
+  justify-content: center;
+  align-items: start;
+}
+
+.Token01-box > div:nth-child(1) {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+.Token01-box > div:nth-child(2) {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5rem;
+}
+.Token01-box > div:nth-child(2) > div {
+  width: 100%;
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  color: var(--clr-1);
+  background-color: var(--clr-3);
+  border-radius: 5px;
+}
+.Token01-box > div:nth-child(2) > div.ca {
+  background-color: var(--clr-4);
+
+  overflow: hidden;
+}
+.Token01-box > div:nth-child(2) > div p {
+  color: var(--clr-1);
+}
+
+/*-- responsive --*/
+
+@media screen and (max-width: 1000px) {
+  .Token01-box {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+  }
+}
